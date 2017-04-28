@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="src/styles/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tic Tac Toe</h1>
+      <div id="info">
+        <span id="playerTurnMessage" class="hidden">Your turn</span>
+        <span id="gameStatus" class="hidden">Game status</span>
+        <span id="aiTurnMessage" class="hidden">AI Turn</span>
+      </div>
+      <div id="board">
+        <table>
+          <tr>
+            <td id="0"></td>
+            <td id="1" class="middlecol"></td>
+            <td id="2"></td>
+          </tr>
+          <tr>
+            <td id="3" class="middlerow"></td>
+            <td id="4" class="middlecol middlerow"></td>
+            <td id="5" class="middlerow"></td>
+          </tr>
+          <tr>
+            <td id="6"></td>
+            <td id="7" class="middlecol"></td>
+            <td id="8"></td>
+          </tr>
+        </table>
+      </div>
+      <div id="popup">
+        <h4>Choose Your Side</h4>
+        <p><span id="X">X</span> - <span id="O">O</span></p>
+      </div>
+      <button id="reset" class="btn btn-secondary hidden">Reset</button>
+      <div id="footer">
+        Created by A G Dobbs
+      </div>
+    </div>
+    <script src="src/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="src/js/tictactoe.js"></script>
+  </body>
+</html>
